@@ -41,7 +41,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/com.xolo.software.market.xml:system/etc/permissions/com.xolo.software.market.xml \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -71,6 +70,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+#$(LOCAL_PATH)/configs/com.xolo.software.market.xml:system/etc/permissions/com.xolo.software.market.xml \
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_sw_vendor.xml:system/etc/media_codecs_sw_vendor.xml \
-    $(LOCAL_PATH)/configs/media/media_profiles_xolo.xml:system/etc/media_profiles.xml
+    $(LOCAL_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \

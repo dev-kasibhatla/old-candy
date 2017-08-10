@@ -181,8 +181,8 @@
             5 - In-app Search
          This needs to match the constants in
          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
-    -->
-    <integer name="config_longPressOnMenuBehavior">2</integer>
+    
+    <integer name="config_longPressOnMenuBehavior">2</integer>  -->
 
     <!-- Control the behavior when the user double-taps the home button.
             0 - Nothing
@@ -263,7 +263,7 @@
     <!-- Defines the shutdown options shown in the reboot dialog. -->
         <array name="shutdown_reboot_options" translatable="false">
         <item>@string/reboot_reboot</item>
-        <item>@string/reboot_soft</item>
+    <!--    <item>@string/reboot_soft</item> -->
         <item>@string/reboot_bootloader</item>
         <item>@string/reboot_recovery</item>
     </array>
@@ -272,7 +272,7 @@
          The first item should be empty for regular reboot. -->
         <string-array name="shutdown_reboot_actions" translatable="false">
         <item></item>
-        <item>soft_reboot</item>
+   <!--     <item>soft_reboot</item>  -->
         <item>bootloader</item>
         <item>recovery</item>
     </string-array>
@@ -412,9 +412,9 @@
 
     <!-- {{{ Performance -->
 
-    <!-- Performance profiles -->
+    <!-- Performance profiles 
     <string name="config_perf_profile_prop">powerhal</string>
-    <string name="config_perf_profile_default_entry">1</string>
+    <string name="config_perf_profile_default_entry">1</string> -->
 
     <!-- /Performance }}} -->
 
